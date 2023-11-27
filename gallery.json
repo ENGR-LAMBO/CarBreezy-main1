@@ -1,0 +1,424 @@
+{
+  "cars": [
+    {
+      "id": "car2",
+      "imageSrc": "https://images.pexels.com/photos/1239423/pexels-photo-1239423.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "name": "Audi",
+      "price": "$50,000",
+      "specs": {
+        "internal": {
+          "seats": 5,
+          "airbags": 6,
+          "transmission": "Automatic"
+        },
+        "external": {
+          "color": "Blue",
+          "wheels": 4,
+          "doors": 4
+        },
+        "engine": {
+          "type": "Gasoline",
+          "power": "250 hp",
+          "torque": "200 lb-ft"
+        },
+        "dimensions": {
+          "length": "182 in",
+          "width": "72 in",
+          "height": "56 in"
+        }
+      }
+    },
+    {
+      "id": "car3",
+      "imageSrc": "https://images.pexels.com/photos/2078701/pexels-photo-2078701.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "name": "Mercedes-Benz",
+      "price": "$65,000",
+      "specs": {
+        "internal": {
+          "seats": 5,
+          "airbags": 8,
+          "transmission": "Automatic"
+        },
+        "external": {
+          "color": "Silver",
+          "wheels": 4,
+          "doors": 4
+        },
+        "engine": {
+          "type": "Gasoline",
+          "power": "300 hp",
+          "torque": "250 lb-ft"
+        },
+        "dimensions": {
+          "length": "190 in",
+          "width": "74 in",
+          "height": "58 in"
+        }
+      }
+    },
+    {
+      "id": "car4",
+      "imageSrc": "https://images.pexels.com/photos/2216730/pexels-photo-2216730.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "name": "BMW",
+      "price": "$60,000",
+      "specs": {
+        "internal": {
+          "seats": 5,
+          "airbags": 6,
+          "transmission": "Automatic"
+        },
+        "external": {
+          "color": "Red",
+          "wheels": 4,
+          "doors": 4
+        },
+        "engine": {
+          "type": "Gasoline",
+          "power": "280 hp",
+          "torque": "220 lb-ft"
+        },
+        "dimensions": {
+          "length": "185 in",
+          "width": "72 in",
+          "height": "55 in"
+        }
+      }
+    },
+    {
+      "id": "car5",
+      "imageSrc": "https://images.pexels.com/photos/4674323/pexels-photo-4674323.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "name": "Porsche",
+      "price": "$80,000",
+      "specs": {
+        "internal": {
+          "seats": 2,
+          "airbags": 6,
+          "transmission": "Manual"
+        },
+        "external": {
+          "color": "Yellow",
+          "wheels": 4,
+          "doors": 2
+        },
+        "engine": {
+          "type": "Gasoline",
+          "power": "350 hp",
+          "torque": "300 lb-ft"
+        },
+        "dimensions": {
+          "length": "178 in",
+          "width": "72 in",
+          "height": "50 in"
+        }
+      }
+    },
+    {
+      "id": "car6",
+      "imageSrc": "https://images.pexels.com/photos/9130190/pexels-photo-9130190.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "name": "Lamborghini",
+      "price": "$355,000",
+      "specs": {
+        "internal": {
+          "seats": 2,
+          "airbags": 6,
+          "transmission": "Automatic"
+        },
+        "external": {
+          "color": "Black",
+          "wheels": 4,
+          "doors": 2
+        },
+        "engine": {
+          "type": "Gasoline",
+          "power": "190 hp",
+          "torque": "179 lb-ft"
+        },
+        "dimensions": {
+          "length": "182.1 in",
+          "width": "73 in",
+          "height": "66.5 in"
+        }
+      }
+    },
+    {
+      "id": "car7",
+      "imageSrc": "https://images.pexels.com/photos/4635340/pexels-photo-4635340.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "name": "Lamborghini",
+      "price": "$405,000",
+      "specs": {
+        "internal": {
+          "seats": 2,
+          "airbags": 6,
+          "transmission": "Automatic"
+        },
+        "external": {
+          "color": "Black",
+          "wheels": 4,
+          "doors": 2
+        },
+        "engine": {
+          "type": "Gasoline",
+          "power": "190 hp",
+          "torque": "179 lb-ft"
+        },
+        "dimensions": {
+          "length": "182.1 in",
+          "width": "73 in",
+          "height": "66.5 in"
+        }
+      }
+    },
+    {
+      "id": "car8",
+      "imageSrc": "https://images.pexels.com/photos/8664302/pexels-photo-8664302.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "name": "Lamborghini",
+      "price": "$285,000",
+      "specs": {
+        "internal": {
+          "seats": 2,
+          "airbags": 6,
+          "transmission": "Automatic"
+        },
+        "external": {
+          "color": "Black",
+          "wheels": 4,
+          "doors": 2
+        },
+        "engine": {
+          "type": "Gasoline",
+          "power": "190 hp",
+          "torque": "179 lb-ft"
+        },
+        "dimensions": {
+          "length": "182.1 in",
+          "width": "73 in",
+          "height": "66.5 in"
+        }
+      }
+    },
+    {
+      "id": "car9",
+      "imageSrc": "https://images.pexels.com/photos/15097786/pexels-photo-15097786/free-photo-of-photo-of-white-expensive-car.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "name": "Lamborghini",
+      "price": "$425,000",
+      "specs": {
+        "internal": {
+          "seats": 2,
+          "airbags": 6,
+          "transmission": "Automatic"
+        },
+        "external": {
+          "color": "Black",
+          "wheels": 4,
+          "doors": 2
+        },
+        "engine": {
+          "type": "Gasoline",
+          "power": "190 hp",
+          "torque": "179 lb-ft"
+        },
+        "dimensions": {
+          "length": "182.1 in",
+          "width": "73 in",
+          "height": "66.5 in"
+        }
+      }
+    },
+    {
+      "id": "car10",
+      "imageSrc": "https://images.pexels.com/photos/15158345/pexels-photo-15158345/free-photo-of-photo-of-an-expensive-car.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "name": "Lamborghini",
+      "price": "$525,000",
+      "specs": {
+        "internal": {
+          "seats": 5,
+          "airbags": 6,
+          "transmission": "Automatic"
+        },
+        "external": {
+          "color": "Black",
+          "wheels": 4,
+          "doors": 4
+        },
+        "engine": {
+          "type": "Gasoline",
+          "power": "190 hp",
+          "torque": "179 lb-ft"
+        },
+        "dimensions": {
+          "length": "182.1 in",
+          "width": "73 in",
+          "height": "66.5 in"
+        }
+      }
+    },
+    {
+      "id": "car11",
+      "imageSrc": "https://images.pexels.com/photos/8664298/pexels-photo-8664298.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "name": "Lamborghini",
+      "price": "$259,000",
+      "specs": {
+        "internal": {
+          "seats": 2,
+          "airbags": 6,
+          "transmission": "Automatic"
+        },
+        "external": {
+          "color": "Black",
+          "wheels": 4,
+          "doors": 2
+        },
+        "engine": {
+          "type": "Gasoline",
+          "power": "190 hp",
+          "torque": "179 lb-ft"
+        },
+        "dimensions": {
+          "length": "182.1 in",
+          "width": "73 in",
+          "height": "66.5 in"
+        }
+      }
+    },
+    {
+      "id": "car12",
+      "imageSrc": "https://images.pexels.com/photos/11191402/pexels-photo-11191402.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "name": "Lamborghini",
+      "price": "$650,000",
+      "specs": {
+        "internal": {
+          "seats": 5,
+          "airbags": 6,
+          "transmission": "Automatic"
+        },
+        "external": {
+          "color": "Black",
+          "wheels": 4,
+          "doors": 4
+        },
+        "engine": {
+          "type": "Gasoline",
+          "power": "190 hp",
+          "torque": "179 lb-ft"
+        },
+        "dimensions": {
+          "length": "182.1 in",
+          "width": "73 in",
+          "height": "66.5 in"
+        }
+      }
+    },
+    {
+      "id": "car13",
+      "imageSrc": "https://images.pexels.com/photos/12253005/pexels-photo-12253005.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "name": "Lamborghini",
+      "price": "$250,000",
+      "specs": {
+        "internal": {
+          "seats": 2,
+          "airbags": 6,
+          "transmission": "Automatic"
+        },
+        "external": {
+          "color": "Black",
+          "wheels": 4,
+          "doors": 2
+        },
+        "engine": {
+          "type": "Gasoline",
+          "power": "190 hp",
+          "torque": "179 lb-ft"
+        },
+        "dimensions": {
+          "length": "182.1 in",
+          "width": "73 in",
+          "height": "66.5 in"
+        }
+      }
+    },
+    {
+      "id": "car14",
+      "imageSrc": "https://images.pexels.com/photos/10199627/pexels-photo-10199627.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "name": "Lamborghini",
+      "price": "$700,000",
+      "specs": {
+        "internal": {
+          "seats": 4,
+          "airbags": 6,
+          "transmission": "Automatic"
+        },
+        "external": {
+          "color": "Black",
+          "wheels": 4,
+          "doors": 4
+        },
+        "engine": {
+          "type": "Gasoline",
+          "power": "190 hp",
+          "torque": "179 lb-ft"
+        },
+        "dimensions": {
+          "length": "182.1 in",
+          "width": "73 in",
+          "height": "66.5 in"
+        }
+      }
+    },
+    {
+      "id": "car15",
+      "imageSrc": "https://images.pexels.com/photos/11191203/pexels-photo-11191203.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "name": "Lamborghini",
+      "price": "$550,000",
+      "specs": {
+        "internal": {
+          "seats": 2,
+          "airbags": 6,
+          "transmission": "Automatic"
+        },
+        "external": {
+          "color": "Black",
+          "wheels": 4,
+          "doors": 2
+        },
+        "engine": {
+          "type": "Gasoline",
+          "power": "190 hp",
+          "torque": "179 lb-ft"
+        },
+        "dimensions": {
+          "length": "182.1 in",
+          "width": "73 in",
+          "height": "66.5 in"
+        }
+      }
+    },
+    {
+      "id": "car1",
+      "imageSrc": "https://images.pexels.com/photos/11191405/pexels-photo-11191405.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "name": "Lamborghini",
+      "price": "$500,000",
+      "specs": {
+        "internal": {
+          "seats": 2,
+          "airbags": 6,
+          "transmission": "Automatic"
+        },
+        "external": {
+          "color": "Black",
+          "wheels": 4,
+          "doors": 2
+        },
+        "engine": {
+          "type": "Gasoline",
+          "power": "190 hp",
+          "torque": "179 lb-ft"
+        },
+        "dimensions": {
+          "length": "182.1 in",
+          "width": "73 in",
+          "height": "66.5 in"
+        }
+      }
+    }
+  ]
+}

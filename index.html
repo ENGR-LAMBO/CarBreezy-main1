@@ -1,0 +1,1228 @@
+<!-- 
+  Name: Lambert Chinaza Ihentuge
+  SEM-1 Project
+-->
+
+<!-- 
+  Contents:
+  nav-bar&landing-page
+  filter
+  body
+  Counter
+  Brand Cars
+  New Cars
+  available offers
+  M S C
+  Used Cars
+  Gallery
+  Contact Form
+	Contact Info
+  Ticker
+	Footer 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0">
+  <title>CarBreezy</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontisto/3.0.4/css/fontisto.min.css">
+  <script 
+  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.js">
+  </script>
+</head>
+<body>
+  <!-- ****************nav-bar&landing-page******************** -->
+  <div class="visitor ms-1 shadow"><i class='fas fa-user me-1'> :</i>
+    <span id="visitorCount">0</span>
+  </div>
+  <div class="navbar">
+    <nav class="nb">
+      <img class="logo" src="./assets/logo1.png" width="80px" height="80px" alt="">
+      <button class="hamburger" onclick="toggleNavbar()">☰</button>
+      <div class="navbar-links" id="navbar-links">
+        <a class="nbb" href="#about">ABOUT US</a>&nbsp;&nbsp;&nbsp;
+        <a class="nbb" href="#contact">CONTACT US</a>&nbsp;&nbsp;&nbsp;
+        <a class="nbb" href="#gallery">GALLERY</a>
+        <ul class="subnav">
+          <li><a class="nbb" href="#">MENU</a></li>
+          <li class="subnav-content">
+            <a href="#brand">Brands</a>
+            <a href="#msc">Most Selling Cars</a>
+            <a href="#new">New Cars</a>
+            <a href="#offer">Offers</a>
+            <a href="#used">Used Cars</a>
+          </li>
+        </ul>
+      </div>
+      <img class="cart" src="./assets/cart.png" width="35px" height="35px" style="cursor: pointer;" alt="Cart" onclick="toggleCartPopup()">
+      <span id="cart-count" id="gallery-cart-count" class="cart-count" style="color: whitesmoke;">0</span>
+    </nav>
+    <div class="ldnpg">
+      <h1 class="ldntxtone">
+          Think It <br>You Can Drive It
+          <button class="lndbt"><a href="#offer">BUY NOW</a></button>
+          <button class="lndbt one"><a href="#gallery">TEST DRIVE</a></button>
+      </h1>
+    </div>
+  </div>  
+  <!-- **************filter***************** -->
+    <div class="filter">
+        <span>
+            <h2>Let's Find Your Perfect Car</h2>
+        </span>
+        <label class="labl" for="type">Vehicle Type:</label><br>
+        <input list="type" name="type">
+        <datalist id="type">
+            <option value="Convertibles">
+            <option value="Hatchbacks">
+            <option value="Sedan">
+            <option value="SUV">
+            <option value="Truck">
+        </datalist> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br><br>
+        <label class="labl" for="model">Vehicle Model:</label><br>
+        <input list="model" name="model">
+        <datalist id="model">
+            <option value="2021">
+            <option value="2022">
+            <option value="2023">
+            <option value="2024">
+        </datalist> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br><br>
+        <label class="labl" for="con">Condition:</label><br>
+        <input list="con" name="con">
+        <datalist id="con">
+            <option value="Brand">
+            <option value="New">
+            <option value="Used">
+        </datalist> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br><br>
+        <label class="labl" for="fuel">Fuel Type:</label><br>   
+        <input list="fuel" name="fuel">
+        <datalist id="fuel">
+            <option value="Diesel">
+            <option value="Electric">
+            <option value="Petrol">
+        </datalist> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="filtbt"><a href="#gallery">Find</a></button>
+        
+    </div>
+    <!-- ***************body******************** -->
+    <div class="body" id="about">
+        <p class="bodytxt">
+            <img class="bodyimg" src="./assets/body2.jpg" alt="" width="400px" height="290px">
+            <span><h2>CarBreezy: Top Dealers for <br>Modern & Clasic Cars</h2></span><br>
+            leading automotive digital marketplace that seeks to make 
+            care buying and selling easy, transparent and efficient. <br>
+            We offering a wide range of vehicles from different brands, 
+            models, and years. Whether you are looking for a new car, <br>
+            a used car, or a vintage car, CarBreezy has something for you. 
+            You can browse their inventory online, compare prices and features, <br>
+            and book a test drive with just a few clicks. CarBreezy also provides 
+            financing options, trade-in services, and warranty plans to make your <br>
+            car buying and selling experience easy, transparent, and efficient. 
+            CarBreezy is more than just a car dealer, it is your trusted partner for <br>
+            all your automotive needs.
+        </p><br>
+        <a href="#about"><button class="bodybt">Read More</button></a>
+    </div>
+    <!-- ***************Counter********************* -->
+    <div class="counter">
+      <div class="con">
+        <div class="row">
+          <div class="col">
+            <div class="counterbox">
+              <div>
+                <span class="counter" data-count="+" data-to="1295" data-speed="500">1295</span>
+                <h6 class="title">+ Available Cars </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="counterbox">
+              <div>
+                <span class="counter" data-count="+" data-to="2256" data-speed="400">2256</span>
+                <h6 class="title">+ Happy Clients</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="counterbox">
+              <div>
+                <span class="counter" data-count="+" data-to="1821" data-speed="300">1821</span>
+                <h6 class="title">+ Team Workers</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="counterbox">
+              <div>
+                <span class="counter" data-count="+" data-to="100" data-speed="4000">100</span>
+                <h6 class="title">+ Years Of Experience</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- *******************Brand Cars******************* -->
+  
+  <div class="collection" id="brand">
+    <h2>Brand Cars</h2>
+  </div>
+
+  <div class="usedcars">
+      <div class="uitem" onclick="showPopup('car2')">
+        <img class="uimg" src="https://images.pexels.com/photos/3802508/pexels-photo-3802508.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+      </div>
+      <div class="uitem" onclick="showPopup('car3')">
+        <img class="uimg" src="https://images.pexels.com/photos/5288699/pexels-photo-5288699.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+      </div>
+      <div class="uitem" onclick="showPopup('car8')">
+        <img class="uimg" src="https://images.pexels.com/photos/8664302/pexels-photo-8664302.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+      </div>
+      <div class="uitem" onclick="showPopup('car10')">
+        <img class="uimg" src="https://images.pexels.com/photos/15158345/pexels-photo-15158345/free-photo-of-photo-of-an-expensive-car.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+      </div>
+      <div class="uitem" onclick="showPopup('car12')">
+        <img class="uimg" src="https://images.pexels.com/photos/11191402/pexels-photo-11191402.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+      </div>
+  </div>
+  <!-- -->
+  <div class="popup" id="car2-popup">
+      <span class="close" onclick="closePopup('car2')">&times;</span>
+    <div class="container">
+        <img src="https://images.pexels.com/photos/3802508/pexels-photo-3802508.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car Image" class="image">
+        <div class="content">
+            <h1 class="title">Lamborghini</h1>
+            <p class="price">$1,205,000</p>
+            <div class="specs">
+                <div class="spec">
+                    <h2 class="spec-title">Internal</h2>
+                    <ul class="spec-list">
+                        <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/seat-belt.png" alt="Seat Icon" class="spec-icon">Seats: 2</li>
+                        <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/airbag.png" alt="Airbag Icon" class="spec-icon">Airbags: 6</li>
+                        <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/automatic.png" alt="Transmission Icon" class="spec-icon">Transmission: Automatic</li>
+                    </ul>
+                </div>
+                <div class="spec">
+                    <h2 class="spec-title">External</h2>
+                    <ul class="spec-list">
+                        <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/color-palette.png" alt="Color Icon" class="spec-icon">Color: Black</li>
+                        <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/wheel.png" alt="Wheel Icon" class="spec-icon">Wheels: 4</li>
+                        <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/car-door.png" alt="Door Icon" class="spec-icon">Doors: 2</li>
+                    </ul>
+                </div>
+                <div class="spec">
+                    <h2 class="spec-title">Engine</h2>
+                    <ul class="spec-list">
+                        <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/gas-station.png" alt="Gas Icon" class="spec-icon">Type: Gasoline</li>
+                        <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/speed.png" alt="Power Icon" class="spec-icon">Power: 190 hp</li>
+                        <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/torque.png" alt="Torque Icon" class="spec-icon">Torque: 179 lb-ft</li>
+                    </ul>
+                </div>
+                <div class="spec">
+                    <h2 class="spec-title">Dimensions</h2>
+                    <ul class="spec-list">
+                        <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Length Icon" class="spec-icon">Length: 182.1 in</li>
+                        <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Width Icon" class="spec-icon">Width: 73 in</li>
+                        <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Height Icon" class="spec-icon">Height: 66.5 in</li>
+                    </ul>
+                </div>
+            </div>
+             
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- *******************New Cars******************* -->
+  <div class="collection" id="new"><h2>New Cars</h2></div>
+  <div class="usedcars">
+    <div class="uitem" onclick="showPopup('car13')">
+      <img class="uimg" src="https://images.pexels.com/photos/12253005/pexels-photo-12253005.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+    </div>
+    <div class="uitem" onclick="showPopup('car1')">
+      <img class="uimg" src="https://images.pexels.com/photos/11191405/pexels-photo-11191405.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+    </div>
+    <div class="uitem" onclick="showPopup('car11')">
+      <img class="uimg" src="https://images.pexels.com/photos/8664298/pexels-photo-8664298.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+    </div>
+    <div class="uitem" onclick="showPopup('car7')">
+      <img class="uimg" src="https://images.pexels.com/photos/4635340/pexels-photo-4635340.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+    </div>
+    <div class="uitem" onclick="showPopup('car4')">
+      <img class="uimg" src="https://images.pexels.com/photos/5730166/pexels-photo-5730166.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+    </div>
+  </div>
+  <!-- ******************available offers********************* -->
+  <div class="avof" id="offer">
+    <h1 class="aohone">Available Offers</h1>
+    <div id="container">
+        <script>
+            let vehicles = [
+                {
+                    "image": "https://images.pexels.com/photos/3802508/pexels-photo-3802508.jpeg?auto=compress&cs=tinysrgb&w=1200",
+                    "VehicleType": "Convertible",
+                    "Vehicle Model": "2022",
+                    "Condition": "Used",
+                    "fuelType": "Petrol",
+                    "Amount": "$1,205,000"
+                },
+                {
+                    "image": "https://images.pexels.com/photos/5288699/pexels-photo-5288699.jpeg?auto=compress&cs=tinysrgb&w=1200",
+                    "VehicleType": "Hatchback",
+                    "Vehicle Model": "2023",
+                    "Condition": "New",
+                    "fuelType": "Diesel",
+                    "Amount": "$675,000"
+                },
+                {
+                    "image": "https://images.pexels.com/photos/5730166/pexels-photo-5730166.jpeg?auto=compress&cs=tinysrgb&w=1200",
+                    "VehicleType": "Sedan",
+                    "Vehicle Model": "2024",
+                    "Condition": "Brand",
+                    "fuelType": "Electric",
+                    "Amount": "$625,000"
+                },
+                {
+                    "image": "https://images.pexels.com/photos/6968984/pexels-photo-6968984.jpeg?auto=compress&cs=tinysrgb&w=1200",
+                    "VehicleType": "SUV",
+                    "Vehicle Model": "2024",
+                    "Condition": "Brand",
+                    "fuelType": "Electric",
+                    "Amount": "$525,000"
+                }
+            ];
+
+            let cartCount = 0;
+
+            let table = document.createElement("table");
+            table.className = "table";
+            let header = document.createElement("tr");
+            header.className = "header";
+            let headers = ["Image", "Vehicle Type", "Vehicle Model", "Condition", "Fuel Type", "Amount", "Add to Cart"];
+            for (let i = 0; i < headers.length; i++) {
+                let th = document.createElement("th");
+                th.className = "cell";
+                th.textContent = headers[i];
+                header.appendChild(th);
+            }
+            table.appendChild(header);
+
+            for (let i = 0; i < vehicles.length; i++) {
+                let vehicle = vehicles[i];
+                let row = document.createElement("tr");
+                row.className = "body-row";
+
+                
+                let img = document.createElement("img");
+                img.src = vehicle.image;
+                img.className = "vehicle-img";
+                let imgCell = document.createElement("td");
+                imgCell.className = "cell";
+                imgCell.appendChild(img);
+                row.appendChild(imgCell);
+
+                
+                let keys = ["VehicleType", "Vehicle Model", "Condition", "fuelType", "Amount"];
+                for (let j = 0; j < keys.length; j++) {
+                    let key = keys[j];
+                    let value = vehicle[key];
+                    let cell = document.createElement("td");
+                    cell.className = "cell";
+                    cell.textContent = value;
+                    row.appendChild(cell);
+                }
+
+                
+                let addToCartCell = document.createElement("td");
+                addToCartCell.className = "cell";
+                let addToCartButton = document.createElement("button");
+                addToCartButton.textContent = "Add to Cart";
+                addToCartButton.onclick = function () {
+                    addToCart(vehicle);
+                };
+                addToCartCell.appendChild(addToCartButton);
+                row.appendChild(addToCartCell);
+
+                table.appendChild(row);
+            }
+
+            let container = document.getElementById("container");
+            container.appendChild(table);
+
+            function addToCart(vehicle) {
+                
+                alert("Added to Cart: " + vehicle["VehicleType"] + " " + vehicle["Vehicle Model"]);
+
+                
+                cartCount++;
+                updateCartCount();
+            }
+
+            function updateCartCount() {
+                let cartCountElement = document.getElementById('cart-count');
+                if (cartCountElement) {
+                    cartCountElement.innerText = cartCount;
+                }
+            }
+        </script>
+    </div>
+</div>
+
+  <!-- *************M S C*************** -->
+  <div id="msc">
+    <h2>Most Selling Cars</h2>
+    <div class="msccontainer">
+      <div class="carmsc">
+        <div class="image" id="image1">
+          <img src="./assets/hatchback21.png" width="100%" height="150" alt="">
+          <div class="detail">
+            <div class="text">Model: 2024 Lamborghini</div>
+            <div class="text">Price: $50,000,000</div>
+            <div class="text">Mileage: 21,210 miles</div>
+          </div>
+        </div>
+        <div class="image" id="image2">
+          <img src="./assets/sedan22.png" width="100%" height="150" alt="">
+          <div class="detail">
+            <div class="text">Model: 2022 Lamborghini</div>
+            <div class="text">Price: $36,999</div>
+            <div class="text">Mileage: 18,500 miles</div>
+          </div>
+        </div>
+        <div class="image" id="image3">
+          <img src="./assets/convertible22.png" width="100%" height="150" alt="">
+          <div class="detail">
+            <div class="text">Model: 2023 Lamborghini</div>
+            <div class="text">Price: $399,999</div>
+            <div class="text">Mileage: 12,000 miles</div>
+          </div>
+        </div>
+        <div class="image" id="image4">
+          <img src="./assets/sedan24.png" width="100%" height="150" alt="">
+          <div class="detail">
+            <div class="text">Model: 2021 Lamborghini</div>
+            <div class="text">Price: $49,999</div>
+            <div class="text">Mileage: 15,000 miles</div>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <div class="title"><h3>Car Details</h3></div>
+          <div class="content">
+            <div class="list">
+              <div class="label"><h3>Click on each car to see:</h3></div>
+              <div class="value" id="model"><h3>Price & mileage</h3></div>
+            </div>
+            <div class="list">
+              <div class="label">Price:</div>
+              <div class="value" id="price">-</div>
+            </div>
+            <div class="list">
+              <div class="label">Mileage:</div>
+              <div class="value" id="mileage">-</div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***************Used Cars***************** -->
+  <div class="collection" id="used"><h2>Used Cars</h2></div>
+  <div class="usedcars">
+    <div class="uitem" onclick="showPopup('car14')">
+      <img class="uimg" src="https://images.pexels.com/photos/10199627/pexels-photo-10199627.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+    </div>
+    <div class="uitem" onclick="showPopup('car15')">
+      <img class="uimg" src="https://images.pexels.com/photos/11191203/pexels-photo-11191203.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+    </div>
+    <div class="uitem" onclick="showPopup('car9')">
+      <img class="uimg" src="https://images.pexels.com/photos/15097786/pexels-photo-15097786/free-photo-of-photo-of-white-expensive-car.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+    </div>
+    <div class="uitem" onclick="showPopup('car6')">
+      <img class="uimg" src="https://images.pexels.com/photos/9130190/pexels-photo-9130190.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+    </div>
+    <div class="uitem" onclick="showPopup('car5')">
+      <img class="uimg" src="https://images.pexels.com/photos/6968984/pexels-photo-6968984.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+    </div>
+  </div>
+  <!-- **************Gallery******************* -->
+  <h1 id="gallery">Gallery</h1>
+  <div class="car-gallery">
+    <div class="car" id="car2" onclick="showPopup('car2')">
+        <img src="https://images.pexels.com/photos/3802508/pexels-photo-3802508.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+        <div class="popup">
+            <span class="close" onclick="closePopup('car2')">&times;</span>
+            <div class="container">
+                <img src="https://images.pexels.com/photos/3802508/pexels-photo-3802508.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car Image" class="image">
+                <div class="content">
+                    <h1 class="title">Lamborghini</h1>
+                    <p class="price">$1,205,000</p>
+                    <div class="specs">
+                        <div class="spec">
+                            <h2 class="spec-title">Internal</h2>
+                            <ul class="spec-list">
+                                <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/seat-belt.png" alt="Seat Icon" class="spec-icon">Seats: 2</li>
+                                <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/airbag.png" alt="Airbag Icon" class="spec-icon">Airbags: 6</li>
+                                <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/automatic.png" alt="Transmission Icon" class="spec-icon">Transmission: Automatic</li>
+                            </ul>
+                        </div>
+                        <div class="spec">
+                            <h2 class="spec-title">External</h2>
+                            <ul class="spec-list">
+                                <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/color-palette.png" alt="Color Icon" class="spec-icon">Color: Black</li>
+                                <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/wheel.png" alt="Wheel Icon" class="spec-icon">Wheels: 4</li>
+                                <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/car-door.png" alt="Door Icon" class="spec-icon">Doors: 2</li>
+                            </ul>
+                        </div>
+                        <div class="spec">
+                            <h2 class="spec-title">Engine</h2>
+                            <ul class="spec-list">
+                                <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/gas-station.png" alt="Gas Icon" class="spec-icon">Type: Gasoline</li>
+                                <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/speed.png" alt="Power Icon" class="spec-icon">Power: 190 hp</li>
+                                <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/torque.png" alt="Torque Icon" class="spec-icon">Torque: 179 lb-ft</li>
+                            </ul>
+                        </div>
+                        <div class="spec">
+                            <h2 class="spec-title">Dimensions</h2>
+                            <ul class="spec-list">
+                                <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Length Icon" class="spec-icon">Length: 182.1 in</li>
+                                <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Width Icon" class="spec-icon">Width: 73 in</li>
+                                <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Height Icon" class="spec-icon">Height: 66.5 in</li>
+                            </ul>
+                        </div>
+                    </div>
+                     
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="car" id="car3" onclick="showPopup('car3')">
+      <img src="https://images.pexels.com/photos/5288699/pexels-photo-5288699.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+      <div class="popup">
+          <span class="close" onclick="closePopup('car3')">&times;</span>
+          <div class="container">
+              <img src="https://images.pexels.com/photos/5288699/pexels-photo-5288699.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car Image" class="image">
+              <div class="content">
+                  <h1 class="title">Lamborghini</h1>
+                  <p class="price">$675,000</p>
+                  <div class="specs">
+                      <div class="spec">
+                          <h2 class="spec-title">Internal</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/seat-belt.png" alt="Seat Icon" class="spec-icon">Seats: 5</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/airbag.png" alt="Airbag Icon" class="spec-icon">Airbags: 6</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/automatic.png" alt="Transmission Icon" class="spec-icon">Transmission: Automatic</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">External</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/color-palette.png" alt="Color Icon" class="spec-icon">Color: Black</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/wheel.png" alt="Wheel Icon" class="spec-icon">Wheels: 4</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/car-door.png" alt="Door Icon" class="spec-icon">Doors: 4</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Engine</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/gas-station.png" alt="Gas Icon" class="spec-icon">Type: Gasoline</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/speed.png" alt="Power Icon" class="spec-icon">Power: 190 hp</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/torque.png" alt="Torque Icon" class="spec-icon">Torque: 179 lb-ft</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Dimensions</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Length Icon" class="spec-icon">Length: 182.1 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Width Icon" class="spec-icon">Width: 73 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Height Icon" class="spec-icon">Height: 66.5 in</li>
+                          </ul>
+                      </div>
+                  </div>
+                   
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="car" id="car4" onclick="showPopup('car4')">
+      <img src="https://images.pexels.com/photos/5730166/pexels-photo-5730166.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+      <div class="popup">
+          <span class="close" onclick="closePopup('car4')">&times;</span>
+          <div class="container">
+              <img src="https://images.pexels.com/photos/5730166/pexels-photo-5730166.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car Image" class="image">
+              <div class="content">
+                  <h1 class="title">Lamborghini</h1>
+                  <p class="price">$625,000</p>
+                  <div class="specs">
+                      <div class="spec">
+                          <h2 class="spec-title">Internal</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/seat-belt.png" alt="Seat Icon" class="spec-icon">Seats: 2</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/airbag.png" alt="Airbag Icon" class="spec-icon">Airbags: 6</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/automatic.png" alt="Transmission Icon" class="spec-icon">Transmission: Automatic</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">External</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/color-palette.png" alt="Color Icon" class="spec-icon">Color: Black</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/wheel.png" alt="Wheel Icon" class="spec-icon">Wheels: 4</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/car-door.png" alt="Door Icon" class="spec-icon">Doors: 2</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Engine</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/gas-station.png" alt="Gas Icon" class="spec-icon">Type: Gasoline</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/speed.png" alt="Power Icon" class="spec-icon">Power: 190 hp</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/torque.png" alt="Torque Icon" class="spec-icon">Torque: 179 lb-ft</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Dimensions</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Length Icon" class="spec-icon">Length: 182.1 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Width Icon" class="spec-icon">Width: 73 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Height Icon" class="spec-icon">Height: 66.5 in</li>
+                          </ul>
+                      </div>
+                  </div>
+                   
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="car" id="car5" onclick="showPopup('car5')">
+      <img src="https://images.pexels.com/photos/6968984/pexels-photo-6968984.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+      <div class="popup">
+          <span class="close" onclick="closePopup('car5')">&times;</span>
+          <div class="container">
+              <img src="https://images.pexels.com/photos/6968984/pexels-photo-6968984.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car Image" class="image">
+              <div class="content">
+                  <h1 class="title">Lamborghini</h1>
+                  <p class="price">$525,000</p>
+                  <div class="specs">
+                      <div class="spec">
+                          <h2 class="spec-title">Internal</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/seat-belt.png" alt="Seat Icon" class="spec-icon">Seats: 2</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/airbag.png" alt="Airbag Icon" class="spec-icon">Airbags: 6</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/automatic.png" alt="Transmission Icon" class="spec-icon">Transmission: Automatic</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">External</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/color-palette.png" alt="Color Icon" class="spec-icon">Color: Black</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/wheel.png" alt="Wheel Icon" class="spec-icon">Wheels: 4</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/car-door.png" alt="Door Icon" class="spec-icon">Doors: 2</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Engine</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/gas-station.png" alt="Gas Icon" class="spec-icon">Type: Gasoline</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/speed.png" alt="Power Icon" class="spec-icon">Power: 190 hp</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/torque.png" alt="Torque Icon" class="spec-icon">Torque: 179 lb-ft</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Dimensions</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Length Icon" class="spec-icon">Length: 182.1 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Width Icon" class="spec-icon">Width: 73 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Height Icon" class="spec-icon">Height: 66.5 in</li>
+                          </ul>
+                      </div>
+                  </div>
+                   
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="car" id="car6" onclick="showPopup('car6')">
+      <img src="https://images.pexels.com/photos/9130190/pexels-photo-9130190.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+      <div class="popup">
+          <span class="close" onclick="closePopup('car6')">&times;</span>
+          <div class="container">
+              <img src="https://images.pexels.com/photos/9130190/pexels-photo-9130190.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car Image" class="image">
+              <div class="content">
+                  <h1 class="title">Lamborghini</h1>
+                  <p class="price">$355,000</p>
+                  <div class="specs">
+                      <div class="spec">
+                          <h2 class="spec-title">Internal</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/seat-belt.png" alt="Seat Icon" class="spec-icon">Seats: 2</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/airbag.png" alt="Airbag Icon" class="spec-icon">Airbags: 6</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/automatic.png" alt="Transmission Icon" class="spec-icon">Transmission: Automatic</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">External</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/color-palette.png" alt="Color Icon" class="spec-icon">Color: Black</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/wheel.png" alt="Wheel Icon" class="spec-icon">Wheels: 4</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/car-door.png" alt="Door Icon" class="spec-icon">Doors: 2</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Engine</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/gas-station.png" alt="Gas Icon" class="spec-icon">Type: Gasoline</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/speed.png" alt="Power Icon" class="spec-icon">Power: 190 hp</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/torque.png" alt="Torque Icon" class="spec-icon">Torque: 179 lb-ft</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Dimensions</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Length Icon" class="spec-icon">Length: 182.1 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Width Icon" class="spec-icon">Width: 73 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Height Icon" class="spec-icon">Height: 66.5 in</li>
+                          </ul>
+                      </div>
+                  </div>
+                   
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="car" id="car7" onclick="showPopup('car7')">
+      <img src="https://images.pexels.com/photos/4635340/pexels-photo-4635340.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+      <div class="popup">
+          <span class="close" onclick="closePopup('car7')">&times;</span>
+          <div class="container">
+              <img src="https://images.pexels.com/photos/4635340/pexels-photo-4635340.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car Image" class="image">
+              <div class="content">
+                  <h1 class="title">Lamborghini</h1>
+                  <p class="price">$405,000</p>
+                  <div class="specs">
+                      <div class="spec">
+                          <h2 class="spec-title">Internal</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/seat-belt.png" alt="Seat Icon" class="spec-icon">Seats: 2</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/airbag.png" alt="Airbag Icon" class="spec-icon">Airbags: 6</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/automatic.png" alt="Transmission Icon" class="spec-icon">Transmission: Automatic</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">External</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/color-palette.png" alt="Color Icon" class="spec-icon">Color: Black</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/wheel.png" alt="Wheel Icon" class="spec-icon">Wheels: 4</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/car-door.png" alt="Door Icon" class="spec-icon">Doors: 2</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Engine</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/gas-station.png" alt="Gas Icon" class="spec-icon">Type: Gasoline</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/speed.png" alt="Power Icon" class="spec-icon">Power: 190 hp</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/torque.png" alt="Torque Icon" class="spec-icon">Torque: 179 lb-ft</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Dimensions</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Length Icon" class="spec-icon">Length: 182.1 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Width Icon" class="spec-icon">Width: 73 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Height Icon" class="spec-icon">Height: 66.5 in</li>
+                          </ul>
+                      </div>
+                  </div>
+                   
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="car" id="car8" onclick="showPopup('car8')">
+      <img src="https://images.pexels.com/photos/8664302/pexels-photo-8664302.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+      <div class="popup">
+          <span class="close" onclick="closePopup('car8')">&times;</span>
+          <div class="container">
+              <img src="https://images.pexels.com/photos/8664302/pexels-photo-8664302.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car Image" class="image">
+              <div class="content">
+                  <h1 class="title">Lamborghini</h1>
+                  <p class="price">$285,000</p>
+                  <div class="specs">
+                      <div class="spec">
+                          <h2 class="spec-title">Internal</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/seat-belt.png" alt="Seat Icon" class="spec-icon">Seats: 2</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/airbag.png" alt="Airbag Icon" class="spec-icon">Airbags: 6</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/automatic.png" alt="Transmission Icon" class="spec-icon">Transmission: Automatic</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">External</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/color-palette.png" alt="Color Icon" class="spec-icon">Color: Black</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/wheel.png" alt="Wheel Icon" class="spec-icon">Wheels: 4</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/car-door.png" alt="Door Icon" class="spec-icon">Doors: 2</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Engine</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/gas-station.png" alt="Gas Icon" class="spec-icon">Type: Gasoline</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/speed.png" alt="Power Icon" class="spec-icon">Power: 190 hp</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/torque.png" alt="Torque Icon" class="spec-icon">Torque: 179 lb-ft</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Dimensions</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Length Icon" class="spec-icon">Length: 182.1 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Width Icon" class="spec-icon">Width: 73 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Height Icon" class="spec-icon">Height: 66.5 in</li>
+                          </ul>
+                      </div>
+                  </div>
+                   
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="car" id="car9" onclick="showPopup('car9')">
+      <img src="https://images.pexels.com/photos/15097786/pexels-photo-15097786/free-photo-of-photo-of-white-expensive-car.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car9">
+      <div class="popup">
+          <span class="close" onclick="closePopup('car2')">&times;</span>
+          <div class="container">
+              <img src="https://images.pexels.com/photos/15097786/pexels-photo-15097786/free-photo-of-photo-of-white-expensive-car.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car Image" class="image">
+              <div class="content">
+                  <h1 class="title">Lamborghini</h1>
+                  <p class="price">$425,000</p>
+                  <div class="specs">
+                      <div class="spec">
+                          <h2 class="spec-title">Internal</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/seat-belt.png" alt="Seat Icon" class="spec-icon">Seats: 2</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/airbag.png" alt="Airbag Icon" class="spec-icon">Airbags: 6</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/automatic.png" alt="Transmission Icon" class="spec-icon">Transmission: Automatic</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">External</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/color-palette.png" alt="Color Icon" class="spec-icon">Color: Black</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/wheel.png" alt="Wheel Icon" class="spec-icon">Wheels: 4</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/car-door.png" alt="Door Icon" class="spec-icon">Doors: 2</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Engine</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/gas-station.png" alt="Gas Icon" class="spec-icon">Type: Gasoline</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/speed.png" alt="Power Icon" class="spec-icon">Power: 190 hp</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/torque.png" alt="Torque Icon" class="spec-icon">Torque: 179 lb-ft</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Dimensions</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Length Icon" class="spec-icon">Length: 182.1 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Width Icon" class="spec-icon">Width: 73 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Height Icon" class="spec-icon">Height: 66.5 in</li>
+                          </ul>
+                      </div>
+                  </div>
+                   
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="car" id="car10" onclick="showPopup('car10')">
+      <img src="https://images.pexels.com/photos/15158345/pexels-photo-15158345/free-photo-of-photo-of-an-expensive-car.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+      <div class="popup">
+          <span class="close" onclick="closePopup('car10')">&times;</span>
+          <div class="container">
+              <img src="https://images.pexels.com/photos/15158345/pexels-photo-15158345/free-photo-of-photo-of-an-expensive-car.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car Image" class="image">
+              <div class="content">
+                  <h1 class="title">Lamborghini</h1>
+                  <p class="price">$525,000</p>
+                  <div class="specs">
+                      <div class="spec">
+                          <h2 class="spec-title">Internal</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/seat-belt.png" alt="Seat Icon" class="spec-icon">Seats: 5</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/airbag.png" alt="Airbag Icon" class="spec-icon">Airbags: 6</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/automatic.png" alt="Transmission Icon" class="spec-icon">Transmission: Automatic</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">External</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/color-palette.png" alt="Color Icon" class="spec-icon">Color: Black</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/wheel.png" alt="Wheel Icon" class="spec-icon">Wheels: 4</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/car-door.png" alt="Door Icon" class="spec-icon">Doors: 4</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Engine</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/gas-station.png" alt="Gas Icon" class="spec-icon">Type: Gasoline</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/speed.png" alt="Power Icon" class="spec-icon">Power: 190 hp</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/torque.png" alt="Torque Icon" class="spec-icon">Torque: 179 lb-ft</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Dimensions</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Length Icon" class="spec-icon">Length: 182.1 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Width Icon" class="spec-icon">Width: 73 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Height Icon" class="spec-icon">Height: 66.5 in</li>
+                          </ul>
+                      </div>
+                  </div>
+                   
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="car" id="car11" onclick="showPopup('car11')">
+      <img src="https://images.pexels.com/photos/8664298/pexels-photo-8664298.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+      <div class="popup">
+          <span class="close" onclick="closePopup('car11')">&times;</span>
+          <div class="container">
+              <img src="https://images.pexels.com/photos/8664298/pexels-photo-8664298.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car Image" class="image">
+              <div class="content">
+                  <h1 class="title">Lamborghini</h1>
+                  <p class="price">$259,000</p>
+                  <div class="specs">
+                      <div class="spec">
+                          <h2 class="spec-title">Internal</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/seat-belt.png" alt="Seat Icon" class="spec-icon">Seats: 2</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/airbag.png" alt="Airbag Icon" class="spec-icon">Airbags: 6</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/automatic.png" alt="Transmission Icon" class="spec-icon">Transmission: Automatic</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">External</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/color-palette.png" alt="Color Icon" class="spec-icon">Color: Black</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/wheel.png" alt="Wheel Icon" class="spec-icon">Wheels: 4</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/car-door.png" alt="Door Icon" class="spec-icon">Doors: 2</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Engine</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/gas-station.png" alt="Gas Icon" class="spec-icon">Type: Gasoline</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/speed.png" alt="Power Icon" class="spec-icon">Power: 190 hp</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/torque.png" alt="Torque Icon" class="spec-icon">Torque: 179 lb-ft</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Dimensions</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Length Icon" class="spec-icon">Length: 182.1 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Width Icon" class="spec-icon">Width: 73 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Height Icon" class="spec-icon">Height: 66.5 in</li>
+                          </ul>
+                      </div>
+                  </div>
+                   
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="car" id="car12" onclick="showPopup('car12')">
+      <img src="https://images.pexels.com/photos/11191402/pexels-photo-11191402.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+      <div class="popup">
+          <span class="close" onclick="closePopup('car12')">&times;</span>
+          <div class="container">
+              <img src="https://images.pexels.com/photos/11191402/pexels-photo-11191402.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car Image" class="image">
+              <div class="content">
+                  <h1 class="title">Lamborghini</h1>
+                  <p class="price">$650,000</p>
+                  <div class="specs">
+                      <div class="spec">
+                          <h2 class="spec-title">Internal</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/seat-belt.png" alt="Seat Icon" class="spec-icon">Seats: 5</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/airbag.png" alt="Airbag Icon" class="spec-icon">Airbags: 6</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/automatic.png" alt="Transmission Icon" class="spec-icon">Transmission: Automatic</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">External</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/color-palette.png" alt="Color Icon" class="spec-icon">Color: Black</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/wheel.png" alt="Wheel Icon" class="spec-icon">Wheels: 4</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/car-door.png" alt="Door Icon" class="spec-icon">Doors: 4</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Engine</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/gas-station.png" alt="Gas Icon" class="spec-icon">Type: Gasoline</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/speed.png" alt="Power Icon" class="spec-icon">Power: 190 hp</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/torque.png" alt="Torque Icon" class="spec-icon">Torque: 179 lb-ft</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Dimensions</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Length Icon" class="spec-icon">Length: 182.1 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Width Icon" class="spec-icon">Width: 73 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Height Icon" class="spec-icon">Height: 66.5 in</li>
+                          </ul>
+                      </div>
+                  </div>
+                   
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="car" id="car13" onclick="showPopup('car13')">
+      <img src="https://images.pexels.com/photos/12253005/pexels-photo-12253005.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+      <div class="popup">
+          <span class="close" onclick="closePopup('car13')">&times;</span>
+          <div class="container">
+              <img src="https://images.pexels.com/photos/12253005/pexels-photo-12253005.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car Image" class="image">
+              <div class="content">
+                  <h1 class="title">Lamborghini</h1>
+                  <p class="price">$250,000</p>
+                  <div class="specs">
+                      <div class="spec">
+                          <h2 class="spec-title">Internal</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/seat-belt.png" alt="Seat Icon" class="spec-icon">Seats: 2</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/airbag.png" alt="Airbag Icon" class="spec-icon">Airbags: 6</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/automatic.png" alt="Transmission Icon" class="spec-icon">Transmission: Automatic</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">External</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/color-palette.png" alt="Color Icon" class="spec-icon">Color: Black</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/wheel.png" alt="Wheel Icon" class="spec-icon">Wheels: 4</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/car-door.png" alt="Door Icon" class="spec-icon">Doors: 2</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Engine</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/gas-station.png" alt="Gas Icon" class="spec-icon">Type: Gasoline</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/speed.png" alt="Power Icon" class="spec-icon">Power: 190 hp</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/torque.png" alt="Torque Icon" class="spec-icon">Torque: 179 lb-ft</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Dimensions</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Length Icon" class="spec-icon">Length: 182.1 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Width Icon" class="spec-icon">Width: 73 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Height Icon" class="spec-icon">Height: 66.5 in</li>
+                          </ul>
+                      </div>
+                  </div>
+                   
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="car" id="car14" onclick="showPopup('car14')">
+      <img src="https://images.pexels.com/photos/10199627/pexels-photo-10199627.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+      <div class="popup">
+          <span class="close" onclick="closePopup('car14')">&times;</span>
+          <div class="container">
+              <img src="https://images.pexels.com/photos/10199627/pexels-photo-10199627.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car Image" class="image">
+              <div class="content">
+                  <h1 class="title">Lamborghini</h1>
+                  <p class="price">$700,000</p>
+                  <div class="specs">
+                      <div class="spec">
+                          <h2 class="spec-title">Internal</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/seat-belt.png" alt="Seat Icon" class="spec-icon">Seats: 4</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/airbag.png" alt="Airbag Icon" class="spec-icon">Airbags: 6</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/automatic.png" alt="Transmission Icon" class="spec-icon">Transmission: Automatic</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">External</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/color-palette.png" alt="Color Icon" class="spec-icon">Color: Black</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/wheel.png" alt="Wheel Icon" class="spec-icon">Wheels: 4</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/car-door.png" alt="Door Icon" class="spec-icon">Doors: 4</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Engine</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/gas-station.png" alt="Gas Icon" class="spec-icon">Type: Gasoline</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/speed.png" alt="Power Icon" class="spec-icon">Power: 190 hp</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/torque.png" alt="Torque Icon" class="spec-icon">Torque: 179 lb-ft</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Dimensions</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Length Icon" class="spec-icon">Length: 182.1 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Width Icon" class="spec-icon">Width: 73 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Height Icon" class="spec-icon">Height: 66.5 in</li>
+                          </ul>
+                      </div>
+                  </div>
+                   
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="car" id="car15" onclick="showPopup('car15')">
+      <img src="https://images.pexels.com/photos/11191203/pexels-photo-11191203.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+      <div class="popup">
+          <span class="close" onclick="closePopup('car15')">&times;</span>
+          <div class="container">
+              <img src="https://images.pexels.com/photos/11191203/pexels-photo-11191203.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car Image" class="image">
+              <div class="content">
+                  <h1 class="title">Lamborghini</h1>
+                  <p class="price">$550,000</p>
+                  <div class="specs">
+                      <div class="spec">
+                          <h2 class="spec-title">Internal</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/seat-belt.png" alt="Seat Icon" class="spec-icon">Seats: 2</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/airbag.png" alt="Airbag Icon" class="spec-icon">Airbags: 6</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/automatic.png" alt="Transmission Icon" class="spec-icon">Transmission: Automatic</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">External</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/color-palette.png" alt="Color Icon" class="spec-icon">Color: Black</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/wheel.png" alt="Wheel Icon" class="spec-icon">Wheels: 4</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/car-door.png" alt="Door Icon" class="spec-icon">Doors: 2</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Engine</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/gas-station.png" alt="Gas Icon" class="spec-icon">Type: Gasoline</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/speed.png" alt="Power Icon" class="spec-icon">Power: 190 hp</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/torque.png" alt="Torque Icon" class="spec-icon">Torque: 179 lb-ft</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Dimensions</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Length Icon" class="spec-icon">Length: 182.1 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Width Icon" class="spec-icon">Width: 73 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Height Icon" class="spec-icon">Height: 66.5 in</li>
+                          </ul>
+                      </div>
+                  </div>
+                   
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="car" id="car1" onclick="showPopup('car1')">
+      <img src="https://images.pexels.com/photos/11191405/pexels-photo-11191405.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car 2">
+      <div class="popup">
+          <span class="close" onclick="closePopup('car1')">&times;</span>
+          <div class="container">
+              <img src="https://images.pexels.com/photos/11191405/pexels-photo-11191405.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Car Image" class="image">
+              <div class="content">
+                  <h1 class="title">Lamborghini</h1>
+                  <p class="price">$500,000</p>
+                  <div class="specs">
+                      <div class="spec">
+                          <h2 class="spec-title">Internal</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/seat-belt.png" alt="Seat Icon" class="spec-icon">Seats: 2</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/airbag.png" alt="Airbag Icon" class="spec-icon">Airbags: 6</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/automatic.png" alt="Transmission Icon" class="spec-icon">Transmission: Automatic</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">External</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/color-palette.png" alt="Color Icon" class="spec-icon">Color: Black</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/wheel.png" alt="Wheel Icon" class="spec-icon">Wheels: 4</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/car-door.png" alt="Door Icon" class="spec-icon">Doors: 2</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Engine</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/gas-station.png" alt="Gas Icon" class="spec-icon">Type: Gasoline</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/speed.png" alt="Power Icon" class="spec-icon">Power: 190 hp</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/torque.png" alt="Torque Icon" class="spec-icon">Torque: 179 lb-ft</li>
+                          </ul>
+                      </div>
+                      <div class="spec">
+                          <h2 class="spec-title">Dimensions</h2>
+                          <ul class="spec-list">
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Length Icon" class="spec-icon">Length: 182.1 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Width Icon" class="spec-icon">Width: 73 in</li>
+                              <li class="spec-item"><img src="https://img.icons8.com/ios-filled/50/000000/ruler.png" alt="Height Icon" class="spec-icon">Height: 66.5 in</li>
+                          </ul>
+                      </div>
+                  </div>
+                   
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ******************Contact Form*********************** -->
+	<section class="contact-form" id="contact">
+		<div class="form-container">
+			<h2>Contact Form</h2>
+			<form action="#" method="POST">
+
+				<label for="name">Name: </label>
+				<input type="text" name="name"  id="name" required placeholder="Lambert Chinaza Ihentuge">
+
+				<label for="email">Email: </label>
+				<input type="email" name="email" id="email" required placeholder="ntugelamb@gmail.com">
+
+				<label for="phone">Phone: </label>
+				<input type="tel" name="phone" id="phone" placeholder="+2347069510175">
+
+				<label for="message">Message: </label>
+				<textarea name="message" id="message" rows="4" required placeholder="My SEM-1 Project(type here!)"></textarea>
+
+				<button type="submit" class="submit-button">Submit</button>
+			</form>
+		</div>
+	</section>
+	<!-- ****************Contact Info******************** -->
+	<section class="contact-info">
+		<h2>Contact Information</h2>
+		<address>
+			CarBreezy<br>
+			22 quarry road old savanna bank building<br>
+			Abeaokuta, Ogun State. 23401<br>
+			Phone: <a href="tel:+2347069510175">+2347069510175</a><br>
+			Email: <a href="mailto:ntugelamb@gmail.com">ntugelamb@gmail.com</a>
+		</address>
+	</section>
+  <!-- ***************Ticker****************** -->
+  <div class="ticker" id="output">
+    <div class="ticker-item">Date: <span id="date"></span></div>
+    <div class="ticker-item">Time: <span id="time"></span></div>
+    <div class="ticker-item">Location: <span id="location"></span></div>
+  </div>
+  <!-- ************Iframe************ -->
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.9104592361273!2d3.3256565747225193!3d7.1363527157388535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a4c6fc3130c2b%3A0x85cfc1734f8026f5!2sAptech!5e0!3m2!1sen!2sng!4v1700736766984!5m2!1sen!2sng" width="100%" height="300" style="border:0;" allowfullscreen="" loading="fast" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<!-- **************Footer********** -->
+	<footer>
+		<p>© 2023 CarBreezy. All rights reserved.</p>
+	</footer>
+
+  
+  <script src="./index.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+</body>
+</html>

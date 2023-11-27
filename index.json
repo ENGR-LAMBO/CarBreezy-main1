@@ -1,0 +1,34 @@
+[
+    {
+        "image": "https://images.pexels.com/photos/3802508/pexels-photo-3802508.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "VehicleType": "Convertible",
+        "Vehicle Model": "2022",
+        "Condition": "Used",
+        "fuelType": "Petrol",
+        "Amount": "$1,205,000"
+    },
+    {
+        "image": "https://images.pexels.com/photos/5288699/pexels-photo-5288699.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "VehicleType": "Hatchback",
+        "Vehicle Model": "2023",
+        "Condition": "New",
+        "fuelType": "Diesel",
+        "Amount": "$$675,000"
+    },
+    {
+        "image": "https://images.pexels.com/photos/5730166/pexels-photo-5730166.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "VehicleType": "Sedan",
+        "Vehicle Model": "2024",
+        "Condition": "Brand",
+        "fuelType": "Electric",
+        "Amount": "$625,000"
+    },
+    {
+        "image": "https://images.pexels.com/photos/6968984/pexels-photo-6968984.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "VehicleType": "SUV",
+        "Vehicle Model": "2024",
+        "Condition": "Brand",
+        "fuelType": "Electric",
+        "Amount": "$525,000"
+    }
+]
